@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>evaizalith</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: #333;
+        }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 1rem;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 1rem;
+            padding: 0.5rem 1rem;
+        }
+
+        nav a:hover {
+            background-color: #555;
+            border-radius: 4px;
+        }
+
+        section {
+            padding: 4rem 2rem 0rem 0rem;
+            min-height: 0vh;
+            padding-top: 6rem;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .img-right {
+            margin-left: auto;
+            margin-right: 30px;
+            max-width: 10%;
+            max-height: 10%;
+            display: block;
+        }
+
+        .img-center {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 40%;
+            max-height: 40%;
+            display: block;
+        }
+
+        .entry {
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        .entry h3 {
+            color: #444;
+            margin-bottom: 0.5rem;
+        }
+
+        .entry-date {
+            color: #666;
+            font-style: italic;
+        }
+
+        .center-text {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .footer {
+            left: 0;
+            bottom: 0;
+            margin-bottom: 0;
+            width: 100%;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+        }
+
+        h1, h2 {
+            color: #222;
+            margin-left: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            line-height: 20px;
+            margin-bottom: 30px;
+        }
+
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <!--<a href="#projects">Projects</a>-->
+        <a href="#publications">Publications</a>
+        <a href="#awards">Awards</a>
+        <a href="https://github.com/evaizalith">GitHub</a>
+    </nav>
+
+    <section id="about">
+        <h1>Eva Powlison</h1>
+        <div class="about-content">
+            <img src="images/profile-img.jpg" alt="Profile Picture" class="profile-img">
+            <div>
+                <p>I am a graduate student of Computer Science focusing on machine learning and databases. My current research focuses on utilizing state-of-the-art deep learning theory and algorithms to derive insights from graph data.</p>
+
+
+                <p> I truly love Computer Science and I have dedicated myself to fully understanding it, studying the fundamental mathematics as well as computer architecture, operating system design, application design, and all the other concerns and sub-topics which sprout from these things. I am experienced with AI and machine learning, database design and implementation, data analysis and visualization with Python and Tableau, low level systems programming in Rust and C, graphics programming in OpenGL and Vulkan, as well as GPU and parallel programming.</p>
+                <p>In my free time, I cook and bake bread. I also study world history, focusing mainly on political-economic history from the 1800s onwards. Besides that, since 2018 I have acted as Game Master for TTRPG campaigns once a week, building worlds, writing stories, and desiging unique challenges for my players, in addition to writing my own indie TTRPGs. My favorite literature includes House of Leaves, Crime and Punishment, Umineko When They Cry, Beowulf, The Phenomenology of Spirit, and The Wretched of the Earth.</p>
+
+                <p> Contact: evapowlison at gmail</p>
+            </div>
+        </div>
+
+
+    </section>
+
+    <section id="publications">
+        <h2>Publications</h2>
+        <div class="entry">
+            <h3>Ahadian, Powlison, Yang, Li, Xu, Guan. (Paper accepted; publication pending) "OAAgent: Multimodal LLM Agent for Predicting Knee Osteoarthritis Progression" IEEE/ACM CHASE</h3>
+            <div class="entry-date">2025</div>
+            <p>Abstract: <i> Osteoarthritis (OA) is a leading cause of disability worldwide, necessitating early prediction of its progression to enable timely interventions and personalized treatment strategies. This study introduces OAAgent, a novel AI-driven framework designed to forecast knee osteoarthritis progression by leveraging clinical and imaging data from the FNIH Biomarkers Consortium. Unlike traditional predictive models, OAAgent integrates multimodal data—including demographic variables, clinical features, and X-ray imaging biomarkers—into a reasoning based framework. This framework combines Chain-of-Thought (CoT) reasoning with task execution, enabling interpretable decision pathways that align with clinical workflows.
+
+                Experimental results demonstrate that OAAgent achieves competitive performance, with a prediction accuracy of 82.19% and robust sensitivity and specificity metrics, outperforming traditional models such as logistic regression. Beyond accuracy, OAAgent offers significant advantages in adaptability, transparency, and real-time decision-making, bridging the gap between AI-driven predictions and clinical usability. By dynamically integrating multimodal data and providing actionable insights, OAAgent positions itself as a transformative tool for advancing personalized medicine and improving OA management. Future work aims to expand its application to diverse datasets and real-world healthcare settings.</i> </p>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <div class="entry">
+            <h3>Graduate Research Assistant - GUANS Lab</h3>
+            <div class="entry-date">January 2025 - Present</div>
+            <ul>
+                <li>Conducted independent research on deep-learning-based keyword search for graph data under the direction of Dr. Xiang Lian and Dr. Qiang Guan</li>
+                <li>Collaborated on research for OAAgent, designing and implementing the agent itself utilizing the Reason + Act (ReAct) framework</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <h3>Undergraduate Research Assistant - GUANS Lab</h3>
+            <div class="entry-date">May 2022 - December 2024</div>
+            <ul>
+                <li>Collaborated on research on soft error mitigation for high performance computing systems</li>
+                <li>Designed and implemented a machine learning model to identify spoken language when given an audio input</li>
+            </ul>
+        </div>
+
+        <div class="entry">
+            <h3>Information Technology Technician - Kent State University</h3>
+            <div class="entry-date">May 2022 - December 2022</div>
+            <ul>
+                <li>Aided university faculty and staff with software issues</li>
+                <li>Maintained, configured, and prepared desktops and laptops for use by university faculty and staff </li>
+            </ul>
+        </div>
+
+        <img src="images/air-o-lyze.png" alt="Air-o-lyze" class="img-center">
+        <div class="center-text"><p><i>Image: Air-o-lyze, my team's project for the KHE 2025 Hackathon</i></p></div>
+
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="entry">
+            <h3>Master of Science in Computer Science - Kent State University</h3>
+            <div class="entry-date">2025 - Present</div>
+            <p>GPA: 4.0/4.0</p>
+        </div>
+
+        <div class="entry">
+            <h3> Bachelor of Science in Computer Science - Kent State University</h3>
+            <div class="entry-date">2021-2024</div>
+            <p>GPA: 3.5/4.0</p>
+    </section>
+
+    <section id="awards">
+        <h2>Awards and Honors</h2>
+
+        <div class="entry">
+            <h3> Kent Hack Enough 2025 Winner</h3>
+            <div class="entry-date">2025</div>
+            <p>My team and I won the business track of the Kent Hack Enough 2025 hackathon with our project Air-o-lyze, a business analytics dashboard.</p>
+            <a href="https://devpost.com/software/air-o-lyze">View Air-o-lyze</a>
+
+        </div>
+
+        <div class="entry">
+            <h3> Undergraduate Symposium on Research - 2nd Place Winner in Computer Science</h3>
+            <div class="entry-date">2024</div>
+            <p>At KSU's Undergraduate Symposium on Research, I presented a poster I designed about my original research focusing on the relationship between compiler optimizations and soft errors. I was awarded second place by the symposium judges in the Computer Science and Mathematics category.</p>
+        </div>
+
+    </section>
+
+    <section>
+
+        <img src="images/beato.png" alt="The Golden Witch Beatrice" class="img-right">
+
+        <div class="footer">
+        </div>
+    </section>
+
+    <!--
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="entry">
+            <h3>AI-Powered Chatbot</h3>
+            <p>Developed a natural language processing chatbot using Python and TensorFlow...</p>
+        </div>
+    </section>
+    -->
+
+
+
+</body>
+</html>
